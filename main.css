@@ -1,0 +1,593 @@
+/*Definition de la page*/
+body
+{
+    background-color: white;
+    font-family: 'RobotoSlab-VariableFont_wght.ttf';
+    color: #181818;
+}
+#bloc_page
+{
+    width: 1450px;
+    margin-left: 15px;
+    margin-top: 50px;
+    margin: auto;
+}
+
+/*Responsive avec media query*/
+
+@media all and (max-width: 1024px)
+{
+     #bloc_page
+    {
+        width: auto;
+    }
+    header
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #logo .logo
+    {   
+      display: flex;
+      justify-content: center;
+       
+    }
+    nav 
+    {
+        width: auto;
+    }
+    nav ul 
+    {
+        
+        flex-direction: row;
+        
+    }
+    nav a 
+    {
+        display: flex;
+        justify-content: space-evenly; 
+    }
+    header  nav a:hover 
+    {
+    border-top: 0px solid white;
+    padding-top: 2px;
+    border-bottom: 3px solid rgb(46, 78, 238);
+    color: rgb(46, 78, 238);
+    font-size: 1.5em;
+    }
+    #rechercher .button
+    {
+        font-size: 0;
+        background-image: url('Booki/loop.PNG');
+        background-size: cover;
+        width: 45px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border: 2px solid;
+       
+    }
+    #rechercher .search
+    {
+        border: 2px solid gray;
+    }
+    #rechercher .location
+    {
+        border: 2px solid gray;
+    }
+    #filtre
+    {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
+    #element 
+    {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    #element ul
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #element li 
+    {
+        margin: 10px 0;
+
+    }
+    #filtre p
+     {
+        display: inline-block;
+        line-height: normal;
+        vertical-align: text-top;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.3em;
+    }
+    #heb_marsaille
+    {
+        display: flex;
+        flex-direction: column-reverse !important;
+        justify-content: space-between;
+        flex-wrap: wrap !important;
+        
+        
+    }
+    #heb_marsaille .aside
+    {
+
+     flex-direction: column;
+     background-color: rgb(155, 233, 243);
+     width: auto ;
+     justify-content: space-around;
+     align-self: flex-start;
+}
+.aside .sept_image, .huit_image, .neuf_image
+{
+    padding: 2px 2px ;
+    border-bottom-left-radius: 25px;
+}
+#heb_marsaille article
+{
+    margin-top: 25px;
+    flex-direction: column;
+     width: auto;
+     background-color: white;
+
+}
+#activite
+{
+    display: flex;
+    flex-direction: column !important;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#activite .activite_1, .activite_4
+   {
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 15px;
+   }
+#activite .activite_1 img,#activite  .activite_4 img
+   {    
+    width: 290px;
+    height: 195px;
+    border-radius: 15px;
+    border: 7px solid white;
+    object-fit: cover;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+
+   }
+ #activite  .activite_description1,#activite .activite_description4
+   {
+    position: absolute;
+    width: 300px;
+    height: 35px;
+    bottom:4px ;
+    border-radius: 5px 5px 5px 5px;
+    border: 3px solid white;
+    background-color: white;
+    padding-top: 15px;
+    padding-left: 4px;
+    font-size: 0.9em;
+    vertical-align: text-top;
+
+   }
+   footer
+   {
+    height: auto;
+    flex-direction: column;
+    width: auto;
+    display: flex;
+    text-align: left;
+
+
+}
+}
+
+/*Header composer du logo et le menu*/
+header
+{   display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}   
+#logo img
+{   
+    margin-top: 50px;
+    height:55px ;
+    width: 107px;
+}
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+ 
+    
+}
+nav li
+{
+    padding-right: 50px;
+    
+}
+nav a
+{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+}
+nav a:hover
+{
+    border-top: 3px solid rgb(46, 78, 238);
+    color: rgb(46, 78, 238);
+    font-size: 1.5em;
+    padding-top: 85px;
+}
+#text p
+{
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*Bar de rechercher*/
+#rechercher
+{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    height: 50px;
+
+}
+.location img
+{
+    width: 35px;
+    height: 25px;
+    padding-left: 3px;
+   
+}
+.location
+{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: white;
+}
+.search
+{
+    border: 3px solid;
+    text-align: center;
+    border-left: 1px;
+    border-right: 1px;
+    font-weight: bolder;
+    color:black;
+}
+.button
+{
+    background-color: rgb(28, 111, 213);
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1.0em;
+}
+/*-Deuxieme menu de filtres*/
+#filtre
+{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: baseline;
+    padding-left: 5px;
+    font-size: 1.0em; 
+
+}
+#element ul {
+    display: flex;
+    list-style-type: none;
+ 
+}
+#element li
+{
+    margin-right: 30px;
+   padding-left: 0px;
+
+}
+
+#element a
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3em;
+    color: #181818;
+    padding-top: 10px;
+    text-decoration: none;
+    border: 2px solid silver;
+    border-radius: 25px;
+    box-shadow: 0px 2px 2px #1c1a19;
+    padding-bottom: 3px;
+    text-align: justify;
+    padding-left: 50px;
+    border-left: 0 transparent;
+    padding-right: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+#element ul a:hover
+{
+    
+    color: rgb(46, 78, 238);
+    animation: alternate;
+    font-size: 1.5em;
+    background-color: azure;
+    
+}
+
+.icon1, .icon2, .icon3, .icon4
+{
+    display: flex;
+    position: absolute;
+    border-radius: 25px;
+    height: 45px;
+    width: 45px;
+    margin-left: -2px;
+    padding-top: 0px;
+    z-index: 1;
+    border: 0.5px solid rgb(178, 178, 186);
+    
+}
+#text1
+   {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 25px;
+   }
+   #text1 p
+   {
+    padding-left: 15px;
+   }
+   #text1 img
+   {
+    width : 20px;
+    height: 20px;
+   }
+   /*Premier article page hebegement a marsaille images,noms et ranking*/
+     #heb_marsaille
+   {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    
+   }
+  
+   article
+   {
+    align-self: flex-start;
+    background-color:thistle;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+    border-radius: 20px 20px 20px 20px;
+    
+   }
+   article a
+   {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    color: black;
+    font-weight: bolder;
+   }
+   article a:hover
+   {
+    color: aliceblue;
+    
+   }
+#article h3::after{
+        content: "\A";
+        white-space: pre;
+      
+   }
+   .first_image, .sec_image, .third_image, .fouth_image, .fifth_image, .six_image
+   {
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 15px;
+   }
+
+   .first_image img, .sec_image img, .third_image img, .fouth_image img, .fifth_image img, .six_image img, .sept_image img, .huit_image img, .neuf_image img
+   
+   {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    border: 7px solid white;
+    object-fit: cover;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+   }
+   .description1, .description2, .description3, .description4, .description5, .description6, .description7, .description8, .description9
+   {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    bottom:4px ;
+    border-radius: 5px 5px 5px 5px;
+    border: 3px solid white;
+    background-color: white;
+    padding-top: 15px;
+    padding-left: 4px;
+    font-size: 0.9em;
+    vertical-align: text-top;
+
+   }
+   .aside
+   {
+    align-self: flex-end;
+    background-color: antiquewhite;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    top: 0;
+
+   }
+   /*Article de droi representant le hotel les plus populaire de marsaille*/
+   .sept_image, .huit_image, .neuf_image
+   {
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 15px;
+   }
+   .sept_image img, .huit_image img, .neuf_image img
+   
+    {
+        width: 300px;
+        height: 200px;
+        border-radius: 15px;
+        border: 7px solid white;
+        object-fit: cover;
+        position: relative;
+        box-shadow: 0px 4px 4px #1c1a19;
+       
+   }
+   .description7, .description8, .description9
+   {
+   position: absolute;
+   width: 300px;
+   height: 50px;
+   bottom:0 ;
+   right:0;
+   border-radius: 5px 5px 5px 5px;
+   border: 3px solid white;
+   background-color: white;
+   font-size: 0.9em;
+   
+   }
+   /*-Activite possible de Marsaille*/
+
+   #activite
+   {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+   }
+   .activite_1, .activite_4
+   {
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 15px;
+   }
+   .activite_1 img, .activite_4 img
+   {
+    height: 410px;
+    width: 300px;
+    border-radius:25px 25px 25px 25px ;
+    position: relative;
+   }
+   .activite_description1, .activite_description4
+   {
+    position: absolute;
+   width: 295px;
+   height: 50px;
+   bottom:35px;
+   border-radius: 15px 15px 15px 15px;
+   border: 3px solid white;
+   background-color: white;
+   font-size: 0.9em;
+   box-shadow: 0px 4px 4px #1c1a19; ;
+   }
+   .activite_2, .activite_3, .activite_5, .activite_6
+   {
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 15px;
+   }
+   .activite_2 img,  .activite_3 img, .activite_5 img, .activite_6 img
+   {    
+    width: 290px;
+    height: 195px;
+    border-radius: 15px;
+    border: 7px solid white;
+    object-fit: cover;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+
+   }
+   .activite_description2, .activite_description3, .activite_description5, .activite_description6
+   {
+    position: absolute;
+    width: 300px;
+    height: 35px;
+    bottom:4px ;
+    border-radius: 5px 5px 5px 5px;
+    border: 3px solid white;
+    background-color: white;
+    padding-top: 15px;
+    padding-left: 4px;
+    font-size: 0.9em;
+    vertical-align: text-top;
+
+   }
+   /*****Footer***/
+footer
+{
+    position: relative;
+    display: flex;
+    background-color: rgb(10, 11, 10);
+    padding-top: 25px;
+    top: 30px;
+    width: 1450px;
+    padding-bottom: 25px;
+    color: white;
+}
+footer p, footer ul,footer li,footer a
+{
+    font-size: 1.2em;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+footer h1
+{
+    font-size: 1.3em;
+    padding-left: 30px;
+}
+#apropos
+{
+    width: 33.9%;
+}
+
+#noshebergement
+{
+    width: 33.9%;
+}
+
+#assistance
+{
+    width: 33.9%;
+}
